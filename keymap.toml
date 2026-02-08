@@ -1,0 +1,10 @@
+[mgr]
+prepend_keymap = [
+  { on = [
+    "e",
+    "x",
+  ], run = "shell 'chmod +x \"$@\"' --confirm", desc = "chmod +x on selected files" },
+  {
+  on = ["e", "o"], run = "shell 'xdg-open \"$1\"' --confirm", desc = "xdg-open current file"
+  }
+]
